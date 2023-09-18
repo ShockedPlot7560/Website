@@ -19,10 +19,18 @@ body, html {
     overflow-y: auto;
     overflow-x: hidden;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "profilPdp profilTitle profilTitle profilTitle"
+    "introduction introduction introduction introduction"
     "profilContent profilContent profilContent profilContent";
     grid-template-columns: 20vw;
+    max-width: 1472px;
+}
+
+.introduction {
+    grid-area: introduction;
+    padding: 10px 30px;
+    padding-bottom: 30px;
 }
 
 .footer {
@@ -103,6 +111,7 @@ body, html {
         grid-template-areas: 
         "profilPdp"
         "profilTitle"
+        "introduction"
         "profilContent";
         grid-template-columns: 1fr;
     }
@@ -128,6 +137,7 @@ body, html {
         grid-template-areas: 
         "profilPdp"
         "profilTitle"
+        "introduction"
         "profilContent";
         grid-template-columns: 1fr;
     }
@@ -218,4 +228,11 @@ hr {
 }
 ::-webkit-scrollbar-corner {
   background: transparent;
+}
+
+.span-warning {
+    color: #cc9c23;
+    border: 1px solid #cc9c23;
+    padding: 10px;
+    width: 100%;
 }
